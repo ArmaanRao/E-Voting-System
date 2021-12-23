@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+<div class="container-form">
+  <form class="form-signin" action="/login" method="POST">
+      <label for="inputEmail" class="sr-only">Adhaar</label>
+      <input type="text" id="inputEmail" class="form-control" placeholder="Adhaar" name ="adhaar" required autofocus>
+
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" name ="password" required>
+      <input class="btn btn-lg btn-primary btn-block" type="submit" value="Log In"> <br>
+      <a href="/register">New voter? Sign up</a>
+        <% console.log(err) %>
+      <% if(err == "yes") {%>
+        <div class="error">
+          <h5>Username or password incorrect</h5>
+        </div>
+      <% } %>
+  </form>
+</div>
+
+<% include ('partials/footer') %>

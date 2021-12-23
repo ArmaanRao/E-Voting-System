@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+<div class="container-form">
+  <form action="/add-candidate" method="POST">
+      <label>Candidate name</label>
+      <input class="form-control" placeholder="Candidate name" name ="name" required autofocus>
+      <label>Candidate id</label>
+      <input class="form-control" placeholder="Candidate ID" name ="id" required autofocus>
+      <label>Party</label>
+      <select class="form-control" name ="party">
+          <option value="ABC">ABC</option>
+          <option value="XYZ">XYZ</option>
+          <option value="PQR">PQR</option>
+          <option value="HIJ">HIJ</option>
+      </select>
+      <input class="btn btn-lg btn-primary btn-block" type="submit" value="Add"> <br>
+  </form>
+  <a href="/admin-dashboard"><button class="btn btn-lg btn-primary btn-block">Dashboard</button></a><br>
+</div>
+
+<% include ('partials/footer') %>

@@ -1,0 +1,35 @@
+<%- include('partials/header') %>
+
+<div class="container-form">
+  <h1>Vote Results</h1>
+  <table style="width:100%; text-align: center;">
+    <tr>
+      <th>Candidate ID</th>
+      <th>Candidate Name</th>
+      <th>Party</th>
+      <th>Symbol</th>
+      <th>Votes</th>
+    </tr>
+    <% for(var i=0;i<candidates.length;++i){ %>
+      <tr style="border-top: solid 0.5px">
+        <td><%= candidates[i].id %></td>
+        <td><%= candidates[i].name %></td>
+        <td><%= candidates[i].party %></td>
+        <td>
+          <% if(candidates[i].symbol == "star"){%>
+            <i class="fas fa-star fa-1x"></i>
+          <%} else if (candidates[i].symbol == "eye"){ %>
+            <i class="fas fa-eye fa-1x"></i>
+          <%} else if(candidates[i].symbol == "book"){%>
+            <i class="fas fa-book fa-1x"></i>
+          <%} else if(candidates[i].symbol == "bell"){%>
+            <i class="fas fa-bell fa-1x"></i>
+          <%}%>
+        <td>
+        <td><%= candidates[i].votes %></td>
+      </tr>
+    <% } %>
+  </table>
+</div>
+
+<%- include('partials/footer') %>

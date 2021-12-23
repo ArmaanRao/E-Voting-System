@@ -1,0 +1,15 @@
+<%- include('partials/header') %>
+
+<div class="container-form">
+  <form class="form-signin" action="/register" method="POST">
+      <label>Full name</label>
+      <input class="form-control" placeholder="Full name" name ="name" required autofocus>
+      <label>Adhaar</label>
+      <input type="text" class="form-control" placeholder="Adhaar" name ="adhaar" required autofocus>
+      <label>Password</label>
+      <input type="password" class="form-control" placeholder="Password" name ="password" required>
+      <input class="btn btn-lg btn-primary btn-block" type="submit" value="Register"> <br>
+  </form>
+</div>
+
+<% include ('partials/footer') %>

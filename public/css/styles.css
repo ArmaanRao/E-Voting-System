@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
+@import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Bubblegum+Sans|Caveat+Brush|Chewy|Lobster+Two');
+
+html,
+body {
+  margin: 0;
+  padding: 3% 7%;
+  background-color: #fff ;
+  background-size: cover;
+  font-family: "Ubuntu";
+  text-align: center;
+}
+
+.features{
+  padding: 3%;
+  background-color: #fff;
+  text-align: center;
+  color: grey;
+}
+
+.feature-heading{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+.feature-box{
+  padding: 5%;
+}
+
+.feature-icon{
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.feature-icon:hover{
+  color: #79a6fe;
+}
+
+.container-form{
+  width: 50%;
+  height: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15% 10%;
+}
+
+.error{
+  margin-top: 3%;
+  background-color: #e84545;
+  border-radius: 5px;
+  border: 2px solid #ce1212;
+  height: 50px;
+  color: #fff;
+  padding-top: 10px;
+}

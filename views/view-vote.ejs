@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+
+<div class="container-form">
+  <h1> Vote details</h1>
+  <br>
+  <div style="width:600px%; text-align: center;">
+      <h4>Candidate ID : <%= vote.id %></h4>
+      <h4>Candidate Name : <%= vote.name %></h4>
+      <h4>Party : <%= vote.party %></h4>
+      <h4>Symbol :
+        <% if(vote.symbol == "star"){%>
+          <i class="fas fa-star fa-1x"></i>
+        <%} else if (vote.symbol == "eye"){ %>
+          <i class="fas fa-eye fa-1x"></i>
+        <%} else if(vote.symbol == "book"){%>
+          <i class="fas fa-book fa-1x"></i>
+        <%} else if(vote.symbol == "bell"){%>
+          <i class="fas fa-bell fa-1x"></i>
+        <%}%>
+      </h4>
+      <a href="/dashboard"><button class="btn btn-lg btn-primary btn-block" style="width:200px; margin-left: auto; margin-right: auto">Dashboard</button></a><br>
+    </div>
+</div>
+
+<%- include('partials/footer') %>

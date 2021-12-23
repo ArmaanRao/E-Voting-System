@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+
+<div class="container-form">
+  <form action="/vote" method="POST">
+      <label>Select Candidate</label>
+      <select class="form-control" name ="id">
+      <% for(var i=0;i<candidates.length;++i){ %>
+        <option value="<%= candidates[i].id %>">Name : <%= candidates[i].name %> - ID : <%= candidates[i].id %> - Party : <%= candidates[i].party %></option>
+      <% } %>
+      </select><br>
+      <input class="btn btn-lg btn-primary btn-block" type="submit" value="Vote"> <br>
+  </form>
+  <a href="/dashboard"><button class="btn btn-lg btn-primary btn-block" style="width:200px; margin-lefT: auto; margin-right: auto">Dashboard</button></a><br>
+</div>
+
+<% include ('partials/footer') %>

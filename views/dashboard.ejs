@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+
+  <div class="container-dashboard">
+    <h1>Welcome <%= name %></h1>
+    <div class="row features">
+      <div class="feature-box col-lg-6">
+        <a href="/vote"><i class="feature-icon fas fa-vote-yea fa-4x"></i></a>
+        <h3 class="feature-heading">Vote</h3>
+      </div>
+      <div class="feature-box col-lg-6">
+        <a href="/view-vote"><i class="feature-icon fas fa-eye fa-4x"></i></a>
+        <h3 class="feature-heading">View vote</h3>
+      </div>
+    </div>
+    <a href="/logout"><button class="btn btn-lg btn-primary btn-block" style="width:100px; margin-lefT: auto; margin-right: auto">Logout</button></a><br>
+  </div>
+
+<%- include('partials/footer') %>
